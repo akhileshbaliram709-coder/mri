@@ -618,7 +618,42 @@
     .theme-toggle{margin-right:6px;width:34px;height:34px;font-size:16px;}
   }
 
+
+  /* Enhanced readability for hero with new image */
+  .hero-photo .frame {
+    position: relative;
+  }
+  .hero-photo .frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(10,37,64,0.55) 0%, rgba(10,37,64,0.15) 50%, rgba(10,37,64,0.45) 100%);
+    border-radius: 20px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .hero-photo .frame img {
+    position: relative;
+    z-index: 0;
+  }
+  .float-card {
+    background: rgba(10, 37, 64, 0.88);
+    border: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 3;
+  }
+  .float-card.top {
+    top: -10px;
+    left: -10px;
+  }
+  .float-card.bottom {
+    bottom: 20px;
+    right: -10px;
+  }
+
 </style>
+<base target="_blank">
 </head>
 <body>
 
@@ -699,7 +734,7 @@
         <div class="hero-photo">
           <div class="float-card top"><div style="font-weight:800;font-size:14px;color:var(--orange)">12+ Yrs</div><div style="font-size:11px;color:#c7d3e0">Training Experience</div></div>
           <div class="frame">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmaYsFANsS-e5zGHhLJEhkeb_dxRuMeUo_ccXDx8mLzPNye3pqCJRJTAQJGah_-ilBRwuZ4_XPedYi2peCSJkkztXUadrlqG2lu_PJK2XDlqNBd7pJ7ejfGgjbtpI7V_FFbgYHPc_cgOKuF=w243-h244-n-k-no-nu" alt="Practical mobile repairing training in progress at MRI Mobile Repair Institute" width="900" height="1128" onerror="this.style.display='none'">
+            <img src="/mnt/agents/upload/WhatsApp Image 2026-07-29 at 6.58.57 PM.jpeg" alt="MRI Mobile Repair Institute students proudly displaying their certificates after course completion" width="900" height="1128" onerror="this.style.display='none'">
           </div>
           <div class="float-card bottom"><div style="font-weight:800;font-size:14px;color:var(--orange)">4.9 ★</div><div style="font-size:11px;color:#c7d3e0">Google Rating</div></div>
         </div>
